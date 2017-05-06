@@ -1,0 +1,330 @@
+/*
+* Author: Austin Jiang;
+* Date: 2017/02/24;
+* Project: China's Price Project;
+* Author's E-mail: ab12ab12@outlook.com;
+* Project's Email: zhangguocpp@163.com;
+*/
+
+
+/*---global---*/
+
+::selection{
+    background-color: #85dafd;
+}
+
+p,
+.page li,
+.page div{
+    line-height:1.8rem;
+}
+
+li{
+    height: auto;
+}
+
+.page ul >li{
+    line-height:1.8rem;
+    list-style: none;
+    position: relative;
+}
+
+.page ul > li:before{
+    content: '';
+    height: 0.4rem;
+    width: 0.4rem;
+    border: solid 2px #2567d0;
+    border-radius: 0.4rem;
+    position: absolute;
+    left: -1rem;
+    top: 0.6rem;
+}
+
+ul{
+    position: relative;
+}
+
+ol,
+ul{
+    margin: 0;
+}
+
+p{
+    margin: 0 0 2rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 0;
+    color: #2567d0 !important;
+}
+
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: #2567d0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Microsoft YaHei UI';
+    background-color: #eee;
+}
+
+/*img{
+    -webkit-transition: ease 400ms;
+    -moz-transition: ease 400ms;
+    -ms-transition: ease 400ms;
+    -o-transition: ease 400ms;
+    transition: ease 400ms;
+}
+
+img:hover{
+    -webkit-box-shadow: 2px 1px 10px #555 ;
+    -moz-box-shadow: 2px 1px 10px #555 ;
+    box-shadow: 2px 1px 10px #555 ;
+    position: relative;
+    bottom:1px;
+    right: 1px;
+
+}*/
+
+.page{
+    position: relative;
+    color: #000;
+    height: auto;
+    margin: 0 auto 5rem auto;
+    padding: 4rem 1rem 1rem 1rem;
+    max-width: 1440px;
+}
+
+
+
+h1 > i,
+h2 > i,
+h3 > i,
+h4 > i{
+    font-size: 1em;
+}
+code{
+    font-size: 1rem;
+    padding: 1rem !important;
+}
+
+pre{
+    margin: 0 0 2rem 0;
+    display: block;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+.page a{
+    color: #777;
+    text-decoration: none;
+    -webkit-transition: ease 200ms;
+    -moz-transition: ease 200ms;
+    -ms-transition: ease 200ms;
+    -o-transition: ease 200ms;
+    transition: ease 200ms;
+
+}
+.page a:hover{
+    color: #2567d0;
+}
+
+
+.main-wrapper{
+    width: auto;
+    margin-right: 356px;
+}
+
+.main-wrapper div {
+    margin-bottom: 2rem;
+
+}
+
+@media screen and (max-width: 767px){
+    .main-wrapper{
+        margin:0;
+    }
+}
+
+.side-wrapper{
+    clear: both;
+    position: absolute;
+    right: 1rem;
+    top: 4rem;
+    width: 340px;
+    float: right;
+}
+
+@media screen and (max-width: 767px) {
+    .side-wrapper{
+        position: static;
+        float: none;
+        margin: 0;
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .main-wrapper{
+        margin-right: 236px;
+    }
+    .side-wrapper{
+        width: 220px;
+    }
+}
+
+.side-wrapper > div {
+    margin-bottom: 2rem;
+
+}
+
+
+/*---main---*/
+
+.main-card{
+    padding: 1rem;
+    width:auto;
+    margin: 0 0 1rem 0;
+    height: auto;
+    background-color: #fff;
+    box-shadow: #aaa 2px -2px 20px;
+}
+
+.main-card i{
+    font-size: 1.5em;
+}
+
+.image-box{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-box img{
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 80%;
+    height:auto;
+}
+
+.image-box
+.image-caption{
+    text-align: center;
+    color: #2567d0;
+}
+
+
+
+.sub-fonts{
+     color: #aaa;
+     margin-right: 1rem;
+     font-size: 0.8rem;
+     -webkit-transition: ease 200ms;
+     -moz-transition: ease 200ms;
+     -ms-transition: ease 200ms;
+     -o-transition: ease 200ms;
+     transition: ease 200ms;
+}
+
+.sub-fonts-2{
+    color: #aaa;
+    font-size: 0.8rem;
+}
+
+.sub-fonts:hover{
+    color: #2567d0;
+}
+
+
+.info-box{
+    border-left: .3rem #2567d0 solid;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+
+
+
+/*---sidebar---*/
+
+.side-card{
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    box-shadow: #aaa 2px -2px 20px;
+
+}
+
+.side-card ul{
+    padding-left: 1rem;
+}
+
+
+
+
+
+.side-card h2 > i{
+    color: #2567d0;
+    -webkit-transition: ease 200ms;
+    -moz-transition: ease 200ms;
+    -ms-transition: ease 200ms;
+    -o-transition: ease 200ms;
+    transition: ease 200ms;
+
+}
+.side-card i:hover{
+    color:#2567d0;
+}
+
+.side-card h1 i{
+    color: #777;
+    -webkit-transition: ease 400ms;
+    -moz-transition: ease 400ms;
+    -ms-transition: ease 400ms;
+    -o-transition: ease 400ms;
+    transition: ease 400ms;
+}
+
+.side-card h1 i:hover{
+    color: #2567d0;
+}
+
+
+
+
+/*---footer---*/
+
+footer{
+    position: absolute;
+    width: 100%;
+    height: 30rem;
+    background-color: #222222;
+    box-shadow: #aaa 2px -2px 20px;
+}
+
+@media screen and (max-width: 767px){
+    footer{
+        height: 100vh;
+    }
+}
+
+#copyright > a{
+    text-decoration: none;
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+}
