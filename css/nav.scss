@@ -26,6 +26,7 @@ nav{
     opacity:0.85;
     //background-color: #222;
     padding: 0 $navPadding 0 $navPadding;
+    z-index:999;
 
 
 }
@@ -40,7 +41,7 @@ nav{
     color: #fff;
     position: relative;
     right: -10px;
-    font-size: 3rem;
+    font-size: 2.8rem;
 
 
     li{

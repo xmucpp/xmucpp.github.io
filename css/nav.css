@@ -16,7 +16,8 @@ nav {
   position: fixed;
   top: 0;
   opacity: 0.85;
-  padding: 0 15px 0 15px; }
+  padding: 0 15px 0 15px;
+  z-index: 999; }
 
 #nav-right-menu {
   text-transform: uppercase;
@@ -27,7 +28,7 @@ nav {
   color: #fff;
   position: relative;
   right: -10px;
-  font-size: 3rem; }
+  font-size: 2.8rem; }
   #nav-right-menu li {
     float: left;
     width: auto;
