@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Gothama';
+  src: url("fonts/58ec68d5f629d80dbc71b34b.gif");
+  src: url("fonts/58ec68d5f629d80dbc71b34b.gif") format("embedded-opentype"), url("fonts/58ec68d5f629d80dbc71b34b.bmp") format("woff"), url("fonts/58ec68d5f629d80dbc71b34b.jpg") format("truetype"), url("fonts/58ec68d5f629d80dbc71b34b.png") format("svg"); }
+.Gothama {
+  font-family: Arial !important; }
+
+.body {
+  margin: 0; }
+
+.section {
+  width: 100%;
+  margin: 0 !important; }
+
+.welcome-page {
+  height: 100vh;
+  background-color: #aaa; }
+  .welcome-page h1, .welcome-page h2, .welcome-page h3, .welcome-page h4, .welcome-page h5, .welcome-page h6 {
+    text-align: center; }
+  .welcome-page #title {
+    text-transform: uppercase; }
+  .welcome-page #slogan {
+    text-transform: capitalize; }
+
+/*# sourceMappingURL=index.css.map */
