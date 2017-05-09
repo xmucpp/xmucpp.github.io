@@ -13,7 +13,10 @@
 
 .section {
   width: 100%;
-  margin: 0 !important; }
+  margin: 0 !important;
+  min-height: 20rem; }
+  .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
+    text-align: center; }
 
 .welcome-page {
   height: 100vh;

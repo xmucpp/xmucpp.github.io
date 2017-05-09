@@ -8,18 +8,33 @@
     <script src="js/jquery-3.2.0.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/pace.css">
+
 
 
 </head>
 
 <body class="Gothama">
+    <div class="pace">
+        <div class="pace-activity"></div>
+        <div class="pace-active"></div>
+    </div>
 
     <nav class="" id="nav">
         <ul id="nav-right-menu">
             <li><a href="#">aa</a></li>
             <li><a href="#">aa</a></li>
             <li><a href="#">aa</a></li>
-            <li><a href="#">aa</a></li>
+            <li>
+                <a href="#">aaa
+                    <ul>
+                        <li>a</li>
+                        <li>a</li>
+                        <li>a</li>
+                    </ul>
+                </a>
+
+            </li>
             <li><a href="#">aa</a></li>
         </ul>
 
@@ -41,37 +56,79 @@
 
     </section>
 
+    <section class="container section"style="background-color: #eee; color: #f85313;">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h1>
+                    Instructions(Read Me):
 
-    <section class="container section" style="height: 40rem;">
+                </h1>
 
-    <!--<div class="row">
+                <p style="font-size: 2rem; text-align: center">
+                    To continue our website, what I need are your contents to fill into the website pages.
+                    <br>
+                    Let's start with our HOME PAGE.
+                    What I need is as follows:
+                </p>
 
-        <div class="col-md-12">1</div>
+                    <ul style="font-size: 2rem; color: #3d6bff;">
+                        <li>Menu options in the navigation bar. e.g Home, Research etc...</li>
+                        <li>"about us" description as you can see in the following part </li>
+                        <li>"about our project" description</li>
+                        <li>"tutorials" (or something similar)</li>
+                        <li>"our tech"(or something like that)</li>
+                        <li>"our personnel"</li>
+                        <li>"our services"</li>
 
-    </div>
+
+                    </ul>
+                <p style="font-size: 2rem; text-align: center">
+                    As for the content, you can refer to <a href="http://bpp.mit.edu/" target="_blank">BPP</a>
+                    <br>
+                    NOTE: I will be unable to continue until I get the content.
+                    <br>
+                    PS. All the materials are supposed to be in English.
+                    <br>
+                    <br>
+                    The page is currently at <a href="http://xmucpp.github.io/index2.html">xmucpp.github.io/index2.html</a>
+                    <br>
+                    <br>
+                    <p style="float:right;text-align: right">best, <br>Austin 2017/05/09</p>
+
+                </p>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="container section" style="">
 
     <div class="row">
 
-        <div class="col-md-6">2</div>
-        <div class="col-md-6">2</div>
+        <div class="col-md-12">
+            <h1>subtitle h1 </h1>
+            <h2>subtitle h2</h2>
+        </div>
+        <div class="col-md-4">
+            <h3>h3 title</h3>
+            <p>this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph </p>
+        </div>
+        <div class="col-md-4">
+            <h3>h3 title</h3>
+            <p>this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph </p>
+        </div>
+        <div class="col-md-4">
+            <h3>h3 title</h3>
+            <p>this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph this is a paragraph </p>
+        </div>
 
     </div>
 
-    <div class="row">
 
-        <div class="col-md-3">3</div>
-        <div class="col-md-3">4</div>
-        <div class="col-md-3">3</div>
-
-    </div>
-
-    <div class="row">
-
-        <div class="col-md-3">4</div>
-        <div class="col-md-3">4</div>
-        <div class="col-md-3">4</div>
-
-    </div>-->
 
     <!--<div class="row">
 
@@ -107,6 +164,29 @@
 
 </section>
 
+<section class="container section">
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <h3>About Us</h3>
+            <p>
+                This part will be illustrating who we are, what we are doing. With no more than 150 words. <br>NOTE that ALL IN ENGLISH!
+            </p>
+        </div>
+
+        <div class="col-md-6">
+            <h3>About Our Project</h3>
+            <p>
+                This part will be illustrating what our project is.  With no more than 150 words. <br>NOTE that ALL IN ENGLISH!
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 <script>
     (function () {
@@ -121,9 +201,13 @@
            var selfHeight = JqueryElm.height();
            var margin = (parentHeight - selfHeight) / 2;
            JqueryElm.css('margin-top', margin);
-
-
          }
+
+        setInterval(function () {
+            verticalAlign($navRightMenu);
+            verticalAlign($welcomeInfo);
+
+        },30);
 
 
 
@@ -142,26 +226,20 @@
              var windowScrollTop = $(window).scrollTop();
              if( $nav && windowScrollTop < 300){
                  $nav.css({'height':'7rem','background-color':'transparent'});
-                 $navRightMenu.css('font-size','2.8rem');
 
              }else if(windowScrollTop >= 300){
                  $nav.css({'height':'5rem','background-color':'#222'});
-                 $navRightMenu.css('font-size','2.3rem');
              }
          });
 
-         setInterval(function () {
-             verticalAlign($navRightMenu);
-             verticalAlign($welcomeInfo);
 
-         },1);
 
 
          $(window).resize(function(){
              verticalAlign($welcomeInfo)
          })
 
-        })()
+    })()
 
 
 
