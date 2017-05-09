@@ -18,6 +18,8 @@
   .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
     text-align: center; }
 
+
+
 .welcome-page {
   height: 100vh;
   -webkit-transition: ease 1000ms;
