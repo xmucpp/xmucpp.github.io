@@ -1,48 +1,96 @@
+/* For index.html 2.0 */
 ::selection {
-  background-color: #aaa; }
-
-@font-face {
-  font-family: 'Gothama';
-  src: url("fonts/58ec68d5f629d80dbc71b34b.gif");
-  src: url("fonts/58ec68d5f629d80dbc71b34b.gif") format("embedded-opentype"), url("fonts/58ec68d5f629d80dbc71b34b.bmp") format("woff"), url("fonts/58ec68d5f629d80dbc71b34b.jpg") format("truetype"), url("fonts/58ec68d5f629d80dbc71b34b.png") format("svg"); }
-.Gothama {
-  font-family: Arial !important; }
+  background-color: rgba(55, 80, 235, 0.2); }
 
 .body {
   margin: 0; }
 
 .section {
+  padding: 3rem 40px 3rem 40px;
   width: 100%;
   margin: 0 !important;
-  min-height: 20rem; }
+  min-height: 110vh; }
   .section h1, .section h2, .section h3, .section h4, .section h5, .section h6 {
-    text-align: center; }
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    display: block; }
+  .section h1:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    width: 6rem;
+    height: 2px;
+    background-color: #3750eb;
+    right: calc((100% - 6rem) / 2); }
+  .section p {
+    font-size: 2rem; }
+  .section p::first-letter {
+    color: #3750eb;
+    font-weight: bold; }
 
-
-
-.welcome-page {
-  height: 100vh;
+#welcome-page {
+  min-height: 100vh;
+  height: 100vh !important;
   -webkit-transition: ease 1000ms;
   -moz-transition: ease 1000ms;
   -ms-transition: ease 1000ms;
   -o-transition: ease 1000ms;
   transition: ease 1000ms;
   background-repeat: no-repeat;
-  background-position: 0 0; }
-  .welcome-page #black {
+  background-position: 0 0;
+  background-size: cover; }
+  #welcome-page #black {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     background-color: #222;
-    opacity: 0.8; }
-  .welcome-page h1, .welcome-page h2, .welcome-page h3, .welcome-page h4, .welcome-page h5, .welcome-page h6 {
+    opacity: 0.5; }
+  #welcome-page h1, #welcome-page h2, #welcome-page h3, #welcome-page h4, #welcome-page h5, #welcome-page h6 {
     color: #fff;
     text-align: center; }
-  .welcome-page #title {
+  #welcome-page #title {
     text-transform: uppercase; }
-  .welcome-page #slogan {
+  #welcome-page #slogan {
     text-transform: capitalize; }
+  #welcome-page .color-block {
+    position: absolute; }
+
+#footer {
+  position: relative;
+  margin-top: 3rem;
+  bottom: 0;
+  width: 100%;
+  min-height: 50vh;
+  background-color: #000;
+  color: #fff; }
+  #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    text-align: left; }
+  #footer .email {
+    text-transform: none;
+    margin-top: 2rem; }
+  #footer small {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center; }
+  #footer .icon {
+    width: 4rem; }
+  #footer a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: ease 300ms;
+    -moz-transition: ease 300ms;
+    -ms-transition: ease 300ms;
+    -o-transition: ease 300ms;
+    transition: ease 300ms; }
+  #footer a:hover {
+    text-decoration: none; }
+  #footer #github:hover {
+    color: #888; }
+  #footer #zhihu:hover {
+    color: #0d79d1; }
 
 /*# sourceMappingURL=index.css.map */

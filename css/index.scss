@@ -1,24 +1,11 @@
 @charset "utf-8";
+/* For index.html 2.0 */
+
+
+$themeColor: rgb(55, 80, 235);
 
 ::selection{
-    background-color: #aaa;
-}
-
-@font-face {
-    font-family: 'Gothama';
-    src: url('fonts/58ec68d5f629d80dbc71b34b.gif');
-    src: url('fonts/58ec68d5f629d80dbc71b34b.gif') format('embedded-opentype'), url('fonts/58ec68d5f629d80dbc71b34b.bmp') format('woff'), url('fonts/58ec68d5f629d80dbc71b34b.jpg') format('truetype'), url('fonts/58ec68d5f629d80dbc71b34b.png') format('svg');
-}
-
-.Gothama {
-    font-family: Arial !important;
-}
-
-.container{
-    > .row{
-        //min-height: 30rem;
-    }
-
+    background-color: rgba($themeColor,0.2);
 }
 
 .body{
@@ -26,18 +13,39 @@
 }
 
 .section{
+    padding: 3rem 40px 3rem 40px;
     width: 100%;
     margin: 0 !important;
-    min-height:20rem;
+    min-height:110vh;
 
     h1,h2,h3,h4,h5,h6{
         text-align: center;
+        text-transform: capitalize;
+        position: relative;
+        display: block;
+    }
+    h1:after{
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 6rem;
+        height:2px;
+        background-color: $themeColor;
+        right: calc((100% - 6rem) / 2);
+    }
+    p{
+        font-size: 2rem;
+    }
+    p::first-letter{
+        color: $themeColor;
+        font-weight: bold;
     }
 }
 
 
-.welcome-page{
-    height: 100vh;
+#welcome-page{
+    min-height:100vh;
+    height: 100vh !important;
     -webkit-transition: ease 1000ms;
     -moz-transition:   ease 1000ms;
     -ms-transition:   ease 1000ms;
@@ -45,6 +53,7 @@
     transition:   ease 1000ms;
     background-repeat: no-repeat;
     background-position: 0 0;
+    background-size: cover;
 
     #black{
         position: absolute;
@@ -53,7 +62,7 @@
         top:0;
         left:0;
         background-color: #222;
-        opacity: 0.8;
+        opacity: 0.5;
     }
 
     h1,h2, h3, h4, h5, h6{
@@ -68,4 +77,57 @@
     #slogan{
         text-transform: capitalize;
     }
+
+    .color-block{
+        position: absolute;
+    }
+}
+
+#footer{
+    //position: absolute;
+    position: relative;
+    margin-top: 3rem;
+    bottom:0;
+    width:100%;
+    min-height:50vh;
+    background-color: #000;
+    color: #fff;
+
+    h1,h2, h3, h4, h5, h6{
+        text-align: left;
+    }
+    .email{
+        text-transform: none;
+        margin-top: 2rem;
+    }
+    small{
+        position: absolute;
+        bottom: 1rem;
+        width:100%;
+        text-align: center;
+    }
+    .icon{
+        width:4rem;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: ease 300ms ;
+        -moz-transition: ease 300ms ;
+        -ms-transition: ease 300ms ;
+        -o-transition: ease 300ms ;
+        transition: ease 300ms ;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    #github:hover{
+        color: #888;
+    }
+
+    #zhihu:hover{
+        color:#0d79d1;
+    }
+
 }

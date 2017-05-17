@@ -1,3 +1,4 @@
+/* for navbar */
 /**{
     -webkit-transition: ease $navTransitionTime ;
     -moz-transition: ease $navTransitionTime ;
@@ -20,15 +21,20 @@ nav {
   z-index: 999; }
 
 #nav-right-menu {
+  margin-top: calc((10rem - 3rem) / 2);
   text-transform: uppercase;
   list-style: none;
   float: right;
   padding: 0;
-  margin: 0;
   color: #fff;
   position: relative;
   right: -10px;
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  -webkit-transition: ease 400ms;
+  -moz-transition: ease 400ms;
+  -ms-transition: ease 400ms;
+  -o-transition: ease 400ms;
+  transition: ease 400ms; }
   #nav-right-menu li {
     float: left;
     width: auto;

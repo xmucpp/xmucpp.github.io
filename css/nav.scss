@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* for navbar */
 
 $themeColor: #1c42aa;
 $navPadding: 15px;
@@ -32,16 +33,21 @@ nav{
 }
 
 #nav-right-menu{
-
+    margin-top: calc((10rem - 3rem) / 2);
     text-transform: uppercase;
     list-style: none;
     float: right;
     padding:0;
-    margin: 0;
     color: #fff;
     position: relative;
     right: -10px;
     font-size: 2.5rem;
+    -webkit-transition: ease $navTransitionTime ;
+    -moz-transition: ease $navTransitionTime ;
+    -ms-transition: ease $navTransitionTime ;
+    -o-transition: ease $navTransitionTime ;
+    transition: ease $navTransitionTime ;
+
 
 
 
