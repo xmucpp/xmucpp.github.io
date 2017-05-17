@@ -1,9 +1,44 @@
-/* For index.html 2.0 */
+/* For slide.html 2.0 */
+#warning {
+  position: fixed;
+  top: 13rem;
+  background-color: #d0a508;
+  border: 1px #000 solid;
+  border-radius: 3px;
+  width: calc(100vw - 10rem);
+  padding: 1rem;
+  display: none;
+  font-size: 2rem;
+  opacity: 0.6; }
+
 ::selection {
-  background-color: rgba(55, 80, 235, 0.2); }
+  background-color: rgba(76, 247, 9, 0.3); }
 
 .body {
   margin: 0; }
+
+.more-button {
+  min-width: 10rem;
+  line-height: 3rem;
+  padding: 1rem auto 1rem auto;
+  font-size: 2rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px #3750eb solid;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  border-radius: 3rem;
+  color: #000;
+  margin-left: calc((100% - 10rem) / 2);
+  -webkit-transition: ease 300ms;
+  -moz-transition: ease 300ms;
+  -ms-transition: ease 300ms;
+  -o-transition: ease 300ms;
+  transition: ease 300ms; }
+
+.more-button:hover {
+  background-color: #3750eb;
+  color: #fff; }
 
 .section {
   padding: 3rem 40px 3rem 40px;
@@ -28,6 +63,14 @@
   .section p::first-letter {
     color: #3750eb;
     font-weight: bold; }
+  .section .photo {
+    margin: 2rem 10% 2rem 10%;
+    width: 80%;
+    height: auto;
+    border-radius: 100%;
+    border: #3750eb 2px solid; }
+  .section figcaption {
+    text-align: center; }
 
 #welcome-page {
   min-height: 100vh;
