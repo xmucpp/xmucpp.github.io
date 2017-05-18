@@ -2,6 +2,7 @@
 
 <head>
     <meta charset="utf8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>China's Prices Project</title>
     <meta name="viewport" id="viewport" content="width=320, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -37,6 +38,11 @@
 <body class="CovesLight">
 
 <nav class="" id="nav">
+    <a href="http://xmucpp.com">
+        <img src="images/cppicon.png" alt="cppLogo" id="nav-logo">
+
+    </a>
+
     <ul id="nav-right-menu">
         <li><a href="#">Research</a></li>
         <li><a href="#">Blog</a></li>
@@ -54,6 +60,29 @@
         </li>-->
     </ul>
 
+    <img src="images/bars.svg" alt="menu" id="mobile-menu-bars">
+
+    <menu id="mobile-menu">
+        <img src="images/cross.svg" alt="close" id="mobile-menu-close">
+        <ul id="mobile-menu-content">
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Service</a></li>
+            <!--<li>
+                <a href="#">aaa
+                    <ul>
+                        <li>a</li>
+                        <li>a</li>
+                        <li>a</li>
+                    </ul>
+                </a>
+
+            </li>-->
+        </ul>
+
+    </menu>
+
 </nav>
 
 
@@ -70,11 +99,11 @@
 
     </div>
 
-    <div id="warning">
+    <!--<div id="warning">
         This page is still under construction, if you find any bugs or display problems, please contact us at website@xmucpp.com. Thank you!
 
     </div>
-
+-->
 
 </header>
 <!--
@@ -383,6 +412,21 @@
         var $welcomePage = $('#welcome-page');
         var $navRightMenu = $('#nav-right-menu');
         var $copy = $('#copy');
+        var $mobileBars = $('#mobile-menu-bars');
+        var $mobileMenu = $('#mobile-menu');
+        var $mobileClose = $('#mobile-menu-close');
+
+        $mobileBars.click(function () {
+           $mobileMenu.css({
+               'right': '0'
+           })
+        });
+
+        $mobileClose.click(function () {
+           $mobileMenu.css({
+               'right': '-105%'
+           })
+        });
 
         $copy.css({
             'margin-left': ($copy.parent().width() - $copy.width())/2
