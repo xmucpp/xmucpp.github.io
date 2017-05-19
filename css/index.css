@@ -112,17 +112,21 @@
   min-height: 50vh;
   background-color: #000;
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    #footer {
+      /*.email{
+          font-size: 1.7rem;
+      }*/ } }
   #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
     text-align: left; }
-  #footer .email {
-    text-transform: none;
-    margin-top: 2rem; }
+  #footer .footer-email {
+    text-transform: none; }
   #footer small {
     position: absolute;
     bottom: 1rem;
     width: 100%;
     text-align: center; }
-  #footer .icon {
+  #footer .footer-icon {
     width: 4rem; }
   #footer a {
     color: #fff;
@@ -134,9 +138,9 @@
     transition: ease 300ms; }
   #footer a:hover {
     text-decoration: none; }
-  #footer #github:hover {
+  #footer #footer-github:hover {
     color: #888; }
-  #footer #zhihu:hover {
+  #footer #footer-zhihu:hover {
     color: #0d79d1; }
 
 /*# sourceMappingURL=index.css.map */

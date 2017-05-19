@@ -65,7 +65,7 @@ nav{
         transform: scale(1);
     }
 
-    &:hover{
+    /*&:hover{
         -webkit-transform: scale(1.3);
         -moz-transform: scale(1.3);
         -ms-transform: scale(1.3);
@@ -74,7 +74,7 @@ nav{
         -webkit-box-shadow:  $logoShadow;
         -moz-box-shadow: $logoShadow;
         box-shadow: $logoShadow;
-    }
+    }*/
 }
 
 #mobile-menu-bars{

@@ -147,12 +147,17 @@ $themeColor: rgb(55, 80, 235);
     background-color: #000;
     color: #fff;
 
+    @media screen and (max-width: 768px){
+        /*.email{
+            font-size: 1.7rem;
+        }*/
+    }
+
     h1,h2, h3, h4, h5, h6{
         text-align: left;
     }
-    .email{
+    .footer-email{
         text-transform: none;
-        margin-top: 2rem;
     }
     small{
         position: absolute;
@@ -160,7 +165,7 @@ $themeColor: rgb(55, 80, 235);
         width:100%;
         text-align: center;
     }
-    .icon{
+    .footer-icon{
         width:4rem;
     }
     a{
@@ -176,11 +181,11 @@ $themeColor: rgb(55, 80, 235);
         text-decoration: none;
     }
 
-    #github:hover{
+    #footer-github:hover{
         color: #888;
     }
 
-    #zhihu:hover{
+    #footer-zhihu:hover{
         color:#0d79d1;
     }
 

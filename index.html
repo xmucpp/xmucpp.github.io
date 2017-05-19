@@ -47,7 +47,7 @@
         <li><a href="#">Research</a></li>
         <li><a href="#">Blog</a></li>
         <li><a href="#">Team</a></li>
-        <li><a href="#">Service</a></li>
+        <li><a href="#">Services</a></li>
         <!--<li>
             <a href="#">aaa
                 <ul>
@@ -68,7 +68,7 @@
             <li><a href="#">Research</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">Team</a></li>
-            <li><a href="#">Service</a></li>
+            <li><a href="#">Services</a></li>
             <!--<li>
                 <a href="#">aaa
                     <ul>
@@ -90,7 +90,7 @@
     <div id="black"></div>
     <div class="row" id="welcome-info">
         <div class="col-md-3"></div>
-        <div class="col-md-6" style="padding: 3rem 0 3rem 0; /*background-color: rgba(34,34,34,0.5);*/ position: relative; margin-top: calc((100vh - 38rem) / 2)">
+        <div class="col-md-6" style="padding: 3rem 0 3rem 0; /*background-color: rgba(34,34,34,0.5);*/ position: relative; margin-top: calc((100vh - 40rem) / 2)">
             <h1 id="title" style="font-size: 6rem">China's Prices Project</h1>
             <h4 id="slogan" style="font-size: 3rem; margin-top: 4rem">All From Data, All About Data.</h4>
             <!--<div class="color-block" style="background-color: rgba(34,34,34,0.8); bottom: -20% ; right: -30%; height: 30%; width: 70%;"></div>-->
@@ -200,7 +200,7 @@
     <section class="container section" style="background-color: #f9f4ed/*background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);*/">
         <div class="row">
             <header class="col-md-12">
-                <h1>Project Introduction</h1>
+                <h1>Research</h1>
             </header>
 
             <div class="col-md-6">
@@ -264,12 +264,12 @@
     <section class="container section" style="background-color: #dcfffc;">
         <div class="row">
             <header class="col-md-12">
-                <h1>Service</h1>
+                <h1>Services</h1>
             </header>
             <div class="col-md-12">
                 <!--<h3>Calculating China’s High-Frequency online prices index</h3>-->
                 <p>
-                    Our research service, mainly provided for university initiatives,
+                    Our research services, mainly provided for university initiatives,
                     covers data, website, training programs, and organizing projects. It
                     includes data collection, data cleaning, data analysis, data
                     visualization, training programs for data science, website
@@ -287,7 +287,7 @@
     <section class="container section">
         <div class="row">
             <header class="col-md-12">
-                <h1>Our Team</h1>
+                <h1>Team</h1>
             </header>
             <div class="col-md-4">
                 <h3>Founder&Leader</h3>
@@ -335,20 +335,20 @@
 
 <footer class="container section" id="footer">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-5">
             <h3>Contact Us</h3>
-            <h4 class="email">Corporation: we@xmucpp.com</h4>
-            <h4 class="email">Data Service: service@xmucpp.com</h4>
-            <h4 class="email">Recruitment: hr@xmucpp.com</h4>
-            <h4 class="email">Website: website@xmucpp.com</h4>
+            <h3 class="footer-email"><img class="footer-icon" src="images/corporation.svg" alt="corporation">&nbsp;Corporation: we@xmucpp.com</h3>
+            <h3 class="footer-email"><img class="footer-icon" src="images/dataservice.svg" alt="dataservice">&nbsp;Data Services: services@xmucpp.com</h3>
+            <h3 class="footer-email"><img class="footer-icon" src="images/recruitment.svg" alt="recruitment">&nbsp;Recruitment: hr@xmucpp.com</h3>
+            <h3 class="footer-email"><img class="footer-icon" src="images/website.svg" alt="website">&nbsp;Website: website@xmucpp.com</h3>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
             <h3>More Links</h3>
-            <a href="https://github.com/xmucpp" id="github">
-                <h3><img class="icon" src="images/github.svg" alt="github">&nbsp;Github</h3>
+            <a href="https://github.com/xmucpp" id="footer-github">
+                <h3 class=""><img class="footer-icon" src="images/github.svg" alt="github">&nbsp;Github</h3>
             </a>
-            <a href="https://zhuanlan.zhihu.com/xmucpp" id="zhihu">
-                <h3><img class="icon"  src="images/zhihu.svg" alt="zhihu">&nbsp;Zhihu</h3>
+            <a href="https://zhuanlan.zhihu.com/xmucpp" id="footer-zhihu">
+                <h3><img class="footer-icon"  src="images/zhihu.svg" alt="zhihu">&nbsp;Zhihu</h3>
             </a>
             <h4></h4>
             <h4></h4>
@@ -459,7 +459,7 @@
 
         $welcomePage.css({'background-image': 'url(images/innovation.jpg)'});
         setInterval(function () {
-            var imgUrl = ['url(images/money.jpg)', 'url(images/innovation.jpg)', 'url(images/coins.jpg)', 'url(images/arrow.jpg)'];
+            var imgUrl = ['url(images/data.jpg)', 'url(images/innovation.jpg)', 'url(images/coins.jpg)', 'url(images/arrow.jpg)'];
             var imgChoice = Math.random() * 10;
             imgChoice = imgUrl[Math.floor(imgChoice) % 4];
             $welcomePage.css({'background-image': imgChoice});
