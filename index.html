@@ -468,7 +468,6 @@
         $('#warning').css({'display':'block'});
         setTimeout(function(){
             $('#warning').css({'display':'none'});
-
         },4000);
 
         $(window).scroll(function () {
@@ -476,12 +475,9 @@
             if ($nav && windowScrollTop < window.innerHeight - 150) {
                 $nav.css({'height': '10rem', 'background-color': 'transparent'});
                 $navRightMenu.css({'margin-top':'calc((10rem - 3rem) / 2)'});
-
-
             } else if (windowScrollTop >= window.innerHeight - 150) {
                 $nav.css({'height': '6rem', 'background-color': '#000'});
                 $navRightMenu.css({'margin-top':'calc((6rem - 3rem) / 2)'});
-
             }
         });
 

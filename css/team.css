@@ -1,0 +1,64 @@
+body {
+  background-color: #51afd1; }
+  body header {
+    margin-top: 15rem;
+    text-align: center; }
+    body header h1 {
+      font-weight: bold;
+      font-size: 6em; }
+  body main {
+    padding-top: 8rem; }
+  body .round {
+    border-radius: 50%; }
+  body .card {
+    margin-top: 3rem;
+    font-size: 1.33em;
+    text-align: center; }
+    body .card h3 {
+      font-weight: bold; }
+    body .card a {
+      text-decoration: none; }
+  body section img {
+    width: 100%;
+    height: auto; }
+
+#footer {
+  position: relative;
+  margin-top: 3rem;
+  bottom: 0;
+  width: auto;
+  min-height: 50vh;
+  background-color: #000;
+  color: #fff; }
+  @media screen and (max-width: 768px) {
+    #footer {
+      /*.email{
+          font-size: 1.7rem;
+      }*/ } }
+  #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6 {
+    text-align: left; }
+  #footer .footer-email {
+    text-transform: none; }
+  #footer small {
+    position: absolute;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center; }
+  #footer .footer-icon {
+    width: 4rem; }
+  #footer a {
+    color: #fff;
+    text-decoration: none;
+    -webkit-transition: ease 300ms;
+    -moz-transition: ease 300ms;
+    -ms-transition: ease 300ms;
+    -o-transition: ease 300ms;
+    transition: ease 300ms; }
+  #footer a:hover {
+    text-decoration: none; }
+  #footer #footer-github:hover {
+    color: #888; }
+  #footer #footer-zhihu:hover {
+    color: #0d79d1; }
+
+/*# sourceMappingURL=team.css.map */

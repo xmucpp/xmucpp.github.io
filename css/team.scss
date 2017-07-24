@@ -1,0 +1,98 @@
+$themeColor: #51afd1;
+
+
+body{
+    background-color: $themeColor;
+    header{
+        h1{
+            font-weight: bold;
+            font-size: 6em;
+        }
+        margin-top: 15rem;
+        text-align: center;
+    }
+    main{
+        padding-top: 8rem;
+    }
+
+    .round{
+        border-radius: 50%;
+    }
+
+    .card{
+        margin-top: 3rem ;
+        font-size: 1.33em;
+        text-align: center;
+        h3{
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+        }
+    }
+
+    section{
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+}
+
+
+#footer{
+    //position: absolute;
+
+    position: relative;
+    margin-top: 3rem;
+    bottom:0;
+    width:auto;
+    min-height:50vh;
+    background-color: #000;
+    color: #fff;
+
+    @media screen and (max-width: 768px){
+        /*.email{
+            font-size: 1.7rem;
+        }*/
+    }
+
+    h1,h2, h3, h4, h5, h6{
+        text-align: left;
+    }
+    .footer-email{
+        text-transform: none;
+    }
+    small{
+        position: absolute;
+        bottom: 1rem;
+        width:100%;
+        text-align: center;
+    }
+    .footer-icon{
+        width:4rem;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+        -webkit-transition: ease 300ms ;
+        -moz-transition: ease 300ms ;
+        -ms-transition: ease 300ms ;
+        -o-transition: ease 300ms ;
+        transition: ease 300ms ;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+    #footer-github:hover{
+        color: #888;
+    }
+
+    #footer-zhihu:hover{
+        color:#0d79d1;
+    }
+
+}
+
+
