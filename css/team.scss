@@ -2,41 +2,7 @@ $themeColor: #51afd1;
 
 
 body{
-    background-color: $themeColor;
-    header{
-        h1{
-            font-weight: bold;
-            font-size: 6em;
-        }
-        margin-top: 15rem;
-        text-align: center;
-    }
-    main{
-        padding-top: 8rem;
-    }
 
-    .round{
-        border-radius: 50%;
-    }
-
-    .card{
-        margin-top: 3rem ;
-        font-size: 1.33em;
-        text-align: center;
-        h3{
-            font-weight: bold;
-        }
-        a{
-            text-decoration: none;
-        }
-    }
-
-    section{
-        img{
-            width:100%;
-            height:auto;
-        }
-    }
 }
 
 

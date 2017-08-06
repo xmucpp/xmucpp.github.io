@@ -1,7 +1,7 @@
-@charset "utf-8";
+//@charset "utf-8";
 /* For slide.html 2.0 */
 
-#warning{
+/*#warning{
     position: fixed;
     top: 13rem;
     background-color: #d0a508;
@@ -12,10 +12,12 @@
     display: none;
     font-size: 2rem;
     opacity:0.6;
-}
-
+}*/
+/*
 
 $themeColor: rgb(55, 80, 235);
+
+
 
 ::selection{
     background-color: rgba(76, 247, 9, 0.3);
@@ -26,8 +28,9 @@ $themeColor: rgb(55, 80, 235);
     font-size: 2rem;
     line-height: 3rem;
 }
+*/
 
-.more-button{
+/*.more-button{
     min-width: 10rem;
     line-height:3rem;
     padding: 1rem auto 1rem auto;
@@ -137,8 +140,9 @@ $themeColor: rgb(55, 80, 235);
     .color-block{
         position: absolute;
     }
-}
+}*/
 
+/*
 #footer{
     //position: absolute;
     position: relative;
@@ -150,9 +154,9 @@ $themeColor: rgb(55, 80, 235);
     color: #fff;
 
     @media screen and (max-width: 768px){
-        /*.email{
+        !*.email{
             font-size: 1.7rem;
-        }*/
+        }*!
     }
 
     h1,h2, h3, h4, h5, h6{
@@ -191,4 +195,4 @@ $themeColor: rgb(55, 80, 235);
         color:#0d79d1;
     }
 
-}
+}*/
